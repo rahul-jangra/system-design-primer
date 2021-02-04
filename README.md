@@ -1051,6 +1051,10 @@ A wide column store's basic unit of data is a column (name/value pair).  A colum
 Google introduced [Bigtable](http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/chang06bigtable.pdf) as the first wide column store, which influenced the open-source [HBase](https://www.edureka.co/blog/hbase-architecture/) often-used in the Hadoop ecosystem, and [Cassandra](http://docs.datastax.com/en/cassandra/3.0/cassandra/architecture/archIntro.html) from Facebook.  Stores such as BigTable, HBase, and Cassandra maintain keys in lexicographic order, allowing efficient retrieval of selective key ranges.
 
 Wide column stores offer high availability and high scalability.  They are often used for very large data sets.
+The difference in speed is due to the way data is stored in disk. Blocks of disks store column-wise data, hence retrieval is faster.
+[Why column-wide store good for warehousing](https://www.stitchdata.com/columnardatabase/)
+
+[Structure of column wide db](https://database.guide/what-is-a-column-store-database/)
 
 ##### Source(s) and further reading: wide column store
 
